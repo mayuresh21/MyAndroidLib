@@ -38,7 +38,7 @@ publishing {
             groupId 'com.github.mayuresh21' // Replace with group ID
 //            artifactId "MyAndroidLib"
             artifactId "utility"
-            version "v0.1.1"
+            version "v0.1.2"
             artifact("$buildDir/outputs/aar/utility}-release.aar")
         }
     }
