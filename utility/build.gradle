@@ -39,7 +39,7 @@ publishing {
 //            artifactId "MyAndroidLib"
             artifactId "utility"
             version "v0.1.2"
-            artifact("$buildDir/outputs/aar/utility}-release.aar")
+            artifact("$buildDir/outputs/aar/utility-release.aar")
         }
     }
 }
