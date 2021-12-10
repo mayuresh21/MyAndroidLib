@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -28,6 +29,17 @@ android {
     }
     kotlinOptions {
         jvmTarget = '11'
+    }
+}
+
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId 'com.github.mayuresh21' // Replace with group ID
+            artifactId "MyAndroidLib"
+            version "v0.1.1"
+            artifact("$buildDir/outputs/aar/MyAndroidLib}-release.aar")
+        }
     }
 }
 
